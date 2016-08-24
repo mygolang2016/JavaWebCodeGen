@@ -6,4 +6,4 @@ create table holiday(
   `cost` double not null default '0.00'comment '成本',
   `delete_flag` int(8) not null default '0' comment '删除标记',
   primary key(`id`)
-)charset=utf8mb4
+)charset=utf8mb4;

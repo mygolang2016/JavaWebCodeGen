@@ -1,7 +1,9 @@
 package com.zju;
 
+import com.zju.meta.Meta;
 import com.zju.meta.Table;
 import com.zju.meta.TableColumn;
+import com.zju.util.FreeMarkerUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -53,6 +55,7 @@ public class CodeGen {
                 e.printStackTrace();
             }
         }
-
+        Meta meta=new Meta(table);
+        new FreeMarkerUtil().run(meta);
     }
 }
