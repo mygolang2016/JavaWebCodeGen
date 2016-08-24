@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - work@localhost" uuid="f7a4eb2f-5c25-4e9d-9b8a-18d6e775f5b4">
+    <database-info product="MySQL" version="5.6.26" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="work"/>
+    <table name="holiday" schema="" catalog="work" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" remarks="aWQ="/>
+      <column name="create_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="company_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="5YWs5Y+4aWQ="/>
+      <column name="name" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="5ZCN56ew"/>
+      <column name="cost" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8" def="MA==" remarks="5oiQ5pys"/>
+      <column name="delete_flag" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="5Yig6Zmk5qCH6K6w"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="message" schema="" catalog="work" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Li76ZSu" autoIncrement="true"/>
+      <column name="COMMAND" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12" remarks="5oyH5Luk5ZCN56ew"/>
+      <column name="DESCRIPTION" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" remarks="5o+P6L+w"/>
+      <column name="CONTENT" sqlType="VARCHAR" precision="2048" scale="0" nullable="true" jdbcType="12" remarks="5YaF5a65"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+    </table>
+    <table name="t_student" schema="" catalog="work" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="stu_name" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="gender" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="address" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="test1" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="user" schema="" catalog="work" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="age" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
