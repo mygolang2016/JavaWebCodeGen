@@ -1,6 +1,7 @@
 package com.zju.meta;
 
 import com.google.common.collect.Lists;
+import com.zju.util.SQLUtil;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class Meta {
     private List<JavaField> fields;
 
     public Meta(String tableName) {
-        this.tableName = tableName;
+        this.tableName = SQLUtil.covertToCamelCase(tableName);
         this.fields= Lists.newArrayList();
     }
     public Meta(Table table){
